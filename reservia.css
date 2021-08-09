@@ -1,0 +1,86 @@
+body
+{
+    font-family: 'Raleway';
+    display: block;
+}
+
+.navbar
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo . hebergements activites inscription"
+}
+
+#logo
+{
+    padding: 0;
+}
+
+.navbar a
+{
+    text-decoration: none;
+    padding: 25px;
+}
+
+.navbar .navbar-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar img
+{
+    grid-area: logo;
+}
+
+#navbar-hebergement
+{
+    grid-area: hebergements;
+    color: #0065fc;
+}
+
+#navbar-activites
+{
+    grid-area: activites;
+}
+
+#navbar-inscription
+{
+    grid-area: inscription;
+    color: #0065fc;
+}
+
+.titre1
+{
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+h1 {
+    display: block;
+    font-weight: bold;
+}
+
+.soustitre
+{
+    margin: 6px 0px;
+}
+
+p
+{
+    display: block;
+}
+@media  screen and (max-width: 768px) 
+{
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "logo inscription"
+        "hebergements activites";
+}
