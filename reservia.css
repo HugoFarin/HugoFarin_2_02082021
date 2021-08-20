@@ -116,12 +116,13 @@ main
     width: 50px;
     height: auto;
     background-color: #f2f2f2;
+    border-radius: 15px 0 0 15px;
 }
 
 .barre-recherche
 {
     width: 230px;
-    height: auto;
+    height: 50px;
     padding: 0 0 0 20px;
 }
 
@@ -129,6 +130,9 @@ main
 {
     background-color: #0065fc;
     color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 0 15px 15px 0;
 }
 
 @media screen and (max-width: 750px)
