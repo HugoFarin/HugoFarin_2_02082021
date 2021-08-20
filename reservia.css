@@ -9,6 +9,12 @@ a
     text-decoration: none;
 }
 
+header
+{
+    width: 98%;
+    margin: auto;
+}
+
 .navbar
 {
     display: grid;
@@ -75,6 +81,12 @@ a
 {
     color: #0065fc;
     font-weight: bold;
+}
+
+main
+{
+    width: 98%;
+    margin: auto;
 }
 
 @media screen and (max-width: 750px)
