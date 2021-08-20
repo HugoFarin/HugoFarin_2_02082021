@@ -1,51 +1,48 @@
-body
+body 
 {
-    font-family: 'Raleway';
-    display: block;
+    font-family: 'Raleway', sans-serif;;
+    margin: 0;
 }
 
-header
+a
 {
-    width: 100%;
-    margin: auto;
+    text-decoration: none;
 }
 
 .navbar
 {
     display: grid;
-    justify-content: center;
+    justify-content: content;
     align-items: center;
     grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "logo . hebergements activites inscription"
+    grid-template-areas: "logo . hebergement activites inscription";
+}
+
+.navbar .navbar-link 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
 }
 
 #logo
 {
     padding: 0;
-}
-
-.navbar a
-{
-    text-decoration: none;
-    padding: 25px;
-}
-
-.navbar .navbar-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.navbar img
-{
     grid-area: logo;
 }
 
 #navbar-hebergement
 {
-    grid-area: hebergements;
+    grid-area: hebergement;
+}
+
+#navbar-hebergement:hover
+{
+    color: #0065fc;
+    border-top: solid #0065fc;
 }
 
 #navbar-hebergement a
@@ -58,6 +55,12 @@ header
     grid-area: activites;
 }
 
+#navbar-activites:hover
+{
+    color: #0065fc;
+    border-top: solid #0065fc;
+}
+
 #navbar-activites a
 {
     color: black;
@@ -66,108 +69,37 @@ header
 #navbar-inscription
 {
     grid-area: inscription;
-    font-weight: bold;
 }
 
 #navbar-inscription a
 {
     color: #0065fc;
-}
-
-main
-{
-    width: 100%;
-    margin: auto;
-}
-
-.titre1
-{
-    font-size: 32px;
-    margin: 10px 0;
-}
-
-h1 {
-    display: block;
     font-weight: bold;
 }
 
-.soustitre
-{
-    margin: 6px 0px;
-}
-
-p
-{
-    display: block;
-}
-
-.bloc-recherche 
-{
-    display: inline-flex;
-    flex-direction: row;
-    margin-top: 15px;
-    margin-bottom: 35px;
-  }
-
-.icon-location 
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 55px;
-    height: auto;
-    background-color: #F2F2F2;
-    border-radius: 14px 0 0 14px;
-}
-
-.fa-map-marker-alt 
-{
-    font-size: 17px;
-}
-
-.barre-recherche 
-{
-    padding: 0 0 0 16px;
-    height: 50px;
-    width: 220px;
-    border: none;
-    border-top: solid 1px #F2F2F2;
-    border-bottom: solid 1px #F2F2F2;
-}
-  
-.barre-recherche::placeholder 
-{
-    color: rgb(170, 170, 170);
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.bouton-recherche
-{ 
-    border: none;
-    border-radius: 0 14px 14px 0;
-    background-color: #0065fc;
-    color: white;
-    padding: 17px;
-}
-
-.bouton-recherche:hover
-{
-    background-color: #003c96;
-}
-
-.bouton-recherche
-
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 750px)
 {
     .navbar
     {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas:
+        grid-template-areas: 
         "logo inscription"
-        "hebergements activites";
+        "hebergement activites";
     }
 
+    #navbar-hebergement:hover
+    {
+        color: #0065fc;
+        border-top: none;
+        border-bottom: solid #0065fc;
+    }
+
+    #navbar-activites:hover
+    {
+        color: #0065fc;
+        border-top: none;
+        border-bottom: solid #0065fc;
+    }
 }
