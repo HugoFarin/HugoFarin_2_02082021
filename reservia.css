@@ -144,15 +144,55 @@ main
     display: none;
 }
 
+.titre2
+{
+    display: inline;
+    font-size: 24px;
+}
+
 .ul-filtres
 {
     display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     list-style-type: none;
+    padding: 0;
+}
+
+.ul-filtres li
+{
+    display: inline;
+    padding: 0 20px 0 0;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 10px;
+    border: solid 2px #f2f2f2;
+    border-radius: 100px ;
+}
+
+.ul-filtres li:hover
+{
+    cursor: pointer;
 }
 
 .icon-filtres
 {
     color: #0065fc;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 0;
+    border-radius: 100px;
+}
+
+.info .fas
+{
+    color: #0065fc;
+    padding: 20px;
+}
+
+.info p
+{
+    display: inline;
 }
 
 @media screen and (max-width: 750px)
