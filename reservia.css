@@ -144,6 +144,12 @@ main
     display: none;
 }
 
+.ul-filtres
+{
+    display: inline-flex;
+    list-style-type: none;
+}
+
 .icon-filtres
 {
     color: #0065fc;
