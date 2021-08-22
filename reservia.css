@@ -144,6 +144,11 @@ main
     display: none;
 }
 
+.icon-filtres
+{
+    color: #0065fc;
+}
+
 @media screen and (max-width: 750px)
 {
     .navbar
