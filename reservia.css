@@ -12,6 +12,7 @@ a
 header
 {
     width: 98%;
+    max-width: 1440px;
     margin: auto;
 }
 
@@ -49,9 +50,15 @@ header
 {
     color: #0065fc;
     border-top: solid #0065fc;
+    border-bottom: none;
 }
 
 #navbar-hebergement a
+{
+    color: black;
+}
+
+#navbar-hebergement a:hover
 {
     color: #0065fc;
 }
@@ -65,11 +72,17 @@ header
 {
     color: #0065fc;
     border-top: solid #0065fc;
+    border-bottom: none;
 }
 
 #navbar-activites a
 {
     color: black;
+}
+
+#navbar-activites a:hover
+{
+    color: #0065fc;
 }
 
 #navbar-inscription
@@ -86,6 +99,7 @@ header
 main
 {
     width: 98%;
+    max-width: 1440px;
     margin: auto;
 }
 
@@ -207,11 +221,25 @@ main
         "hebergement activites";
     }
 
+    #navbar-hebergement
+    {
+        color: #0065fc;
+        border-top: none;
+        border-bottom: solid #f2f2f2;
+    }
+
     #navbar-hebergement:hover
     {
         color: #0065fc;
         border-top: none;
         border-bottom: solid #0065fc;
+    }
+
+    #navbar-activites
+    {
+        color: #0065fc;
+        border-top: none;
+        border-bottom: solid #f2f2f2;
     }
 
     #navbar-activites:hover
