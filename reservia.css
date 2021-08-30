@@ -212,6 +212,25 @@ main
     display: inline;
 }
 
+.deux-blocs
+{
+    background: #f2f2f2;
+}
+
+.h2-avec-icon
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.h2-avec-icon i
+{
+    font-size: 24px;
+}
+
+
 @media screen and (max-width: 750px)
 {
     .navbar
