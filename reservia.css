@@ -214,7 +214,24 @@ main
 
 .deux-blocs
 {
+    background: white;
+}
+
+.bloc-hebergement
+{
     background: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.bloc-plus-populaires
+{
+    background: #f2f2f2;
+    border-radius: 20px;
+    padding: 0 20px;
 }
 
 .h2-avec-icon
