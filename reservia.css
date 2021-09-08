@@ -237,6 +237,9 @@ main
     background: #f2f2f2;
     border-radius: 20px;
     padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .h2-avec-icon
@@ -261,7 +264,7 @@ main
 
 .case-hebergement
 {
-    background: white;
+    background-color: white;
     width: 250px;
     border-radius: 20px;
     display: flex;
@@ -276,6 +279,29 @@ main
     border-radius: 20px 20px 0 0
 }
 
+.grille-plus-populaires
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 1fr 1fr 1fr;
+}
+
+.case-plus-populaires
+{
+    display: flex;
+    background-color: white;
+    border-radius: 20px
+}
+
+@media screen and (max-width: 950px)
+{
+    .grille-hebergement
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 750px)
 {
@@ -339,6 +365,13 @@ main
         position: absolute;
         right: -20px;
         border-radius: 15px;
+    }
+
+    .grille-hebergement
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 }
 
