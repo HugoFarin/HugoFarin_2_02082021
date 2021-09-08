@@ -2,7 +2,7 @@ body
 {
     font-family: 'Raleway', sans-serif;;
     margin: 0;
-    padding: 0px 20px;
+    padding: 0px 5px;
 }
 
 a
@@ -219,6 +219,7 @@ main
 {
     background: white;
     margin: 40px 0px;
+    display: grid;
 }
 
 .bloc-hebergement
@@ -249,6 +250,25 @@ main
 .h2-avec-icon i
 {
     font-size: 24px;
+}
+
+.grille-hebergement
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.case-hebergement
+{
+    background: white;
+    width: 250px;
+}
+
+.case-hebergement img
+{
+    width: 250px;
+    height: 100px;
 }
 
 
