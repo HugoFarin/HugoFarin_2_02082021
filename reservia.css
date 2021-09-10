@@ -20,7 +20,7 @@ header
 .navbar
 {
     display: grid;
-    justify-content: content;
+    justify-content: center;
     align-items: center;
     grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -215,95 +215,28 @@ main
     display: inline;
 }
 
-.deux-blocs
+@media screen and (max-width: 1440px)
 {
-    background: white;
-    margin: 40px 0px;
-    display: grid;
+
 }
 
-.bloc-hebergement
+@media screen and (max-width: 1200px)
 {
-    background: #f2f2f2;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 20px;
-}
-
-.bloc-plus-populaires
-{
-    background: #f2f2f2;
-    border-radius: 20px;
-    padding: 0 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.h2-avec-icon
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0;
-}
-
-.h2-avec-icon i
-{
-    font-size: 24px;
-}
-
-.grille-hebergement
-{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-}
-
-.case-hebergement
-{
-    background-color: white;
-    width: 250px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    border: 5px solid white;
-}
-
-.case-hebergement img
-{
-    width: 100%;
-    height: 100px;
-    border-radius: 20px 20px 0 0
-}
-
-.grille-plus-populaires
-{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.25fr 1fr 1fr 1fr;
-}
-
-.case-plus-populaires
-{
-    display: flex;
-    background-color: white;
-    border-radius: 20px
-}
-
-@media screen and (max-width: 950px)
-{
-    .grille-hebergement
+    main
     {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 100%;
+        width: 95%;
     }
 }
 
-@media screen and (max-width: 750px)
+@media screen and (max-width: 992px)
+{
+    main
+    {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px)
 {
     .navbar
     {
@@ -366,19 +299,9 @@ main
         right: -20px;
         border-radius: 15px;
     }
-
-    .grille-hebergement
-    {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
 }
 
-@media screen and (max-width: 450px)
+@media screen and (max-width: 576px)
 {
-    .bloc-recherche
-    {
-        width: 80%;
-    }
+      
 }
