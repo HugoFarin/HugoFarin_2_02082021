@@ -261,6 +261,11 @@ main
     border-radius: 20px;
 }
 
+.case-accommodation:hover
+{
+    cursor: pointer;
+}
+
 .case-accommodation img
 {
     width: 100%;
@@ -320,6 +325,12 @@ main
     margin-bottom: 60px;
 }
 
+.case-most-popular:hover
+{
+    cursor: pointer;
+}
+
+
 .case-most-popular-img
 {
     display: flex;
@@ -334,6 +345,16 @@ main
     height: 100%;
     border-radius: 20px 0 0 20px;
     object-fit: cover;
+}
+
+.bluestar
+{
+    color: #0065fc;
+}
+
+.transparentstar
+{
+    color: #f2f2f2;
 }
 
 
