@@ -372,6 +372,13 @@ main
     {
         width: 90%;
     }
+
+    .cases-accommodation
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 768px)
@@ -445,5 +452,12 @@ main
     {
         width: 200px;
         height: 42px;
+    }
+
+    .cases-accommodation
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 }
