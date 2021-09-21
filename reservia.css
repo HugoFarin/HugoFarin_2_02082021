@@ -217,7 +217,106 @@ main
 
 .blocs
 {
-    margin: 40px 0 60px 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.bloc-most-popular
+{
+    background: #F2F2F2;
+    border-radius: 20px;
+}
+
+.card-most-popular
+{
+}
+
+.bloc-most-popular .h2-with-icon
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.icon-plus-popular
+{
+    font-size: 25px;
+}
+
+.cases-most-popular
+{
+
+}
+
+.case-most-popular:hover
+{
+    cursor: pointer;
+}
+
+.case-most-popular
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    background: white;
+    border: 5px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 0px black;
+    margin: 20px;
+}
+
+.case-most-popular #case-one
+{
+}
+
+.case-most-popular #case-two
+{
+}
+
+.case-most-popular #case-three
+{
+}
+
+.case-most-popular-img
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+}
+
+.case-most-popular-img img
+{
+    width: 100%;
+    height: 100%;
+    max-height: 110px;
+    min-width: 80px;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+}
+
+.case-most-popular .case-text
+{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.case-most-popular .case-text .name
+{
+    margin: 0;
+    color: black;
+}
+
+.case-most-popular .case-text .price
+{
+    margin: 0;
+    color: black;
 }
 
 .bloc-accommodation
