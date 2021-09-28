@@ -406,6 +406,94 @@ main
     color: #f2f2f2;
 }
 
+.bloc-activities
+{
+    height: 550px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 3fr;
+    grid-gap: 30px;
+    grid-template-areas: 
+    "activities-1 activities-2 activities-4 activities-5"
+    "activities-1 activities-2 activities-4 activities-5"
+    "activities-1 activities-2 activities-4 activities-6"
+    "activities-1 activities-2 activities-4 activities-6"
+    "activities-1 activities-3 activities-4 activities-6"
+    "activities-1 activities-3 activities-4 activities-6";
+}
+
+
+.bloc-activities .card-activities
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 17px -9px black
+}
+
+.bloc-activities .activites-title
+{
+    position: absolute;
+    width: 95%;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    padding: 20px 0 20px 5%;
+    margin: 0;
+    bottom: 0;
+}
+
+.card-activities:hover
+{
+    cursor: pointer;
+}
+
+.card-activities img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    margin: 0;
+}
+
+.case-activities
+{
+    height: 100%;
+    margin: 0;
+    color: black;
+}
+
+#activities-1
+{
+    grid-area: activities-1;
+}
+
+#activities-2
+{
+    grid-area: activities-2;
+}
+
+#activities-3
+{
+    grid-area: activities-3;
+}
+
+#activities-4
+{
+    grid-area: activities-4;
+}
+
+#activities-5
+{
+    grid-area: activities-5;
+}
+
+#activities-6
+{
+    grid-area: activities-6;
+}
 
 @media screen and (max-width: 1200px)
 {
