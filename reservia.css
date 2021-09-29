@@ -409,7 +409,7 @@ main
 .bloc-activities
 {
     height: 550px;
-    margin-bottom: 50px;
+    margin-bottom: 20%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
@@ -512,7 +512,6 @@ main
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15%;
 }
 
 .blocs-footer
@@ -582,6 +581,17 @@ main
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
+
+    .bloc-activities
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "activities-1 activities-2"
+        "activities-4 activities-3"
+        "activities-5 activities-6";
+        padding-bottom: 600px;
+    }
 }
 
 @media screen and (max-width: 768px)
@@ -647,6 +657,11 @@ main
         right: -20px;
         border-radius: 15px;
     }
+
+    .bloc-activities
+    {
+        padding-bottom: 400px;
+    }
 }
 
 @media screen and (max-width: 576px)
@@ -667,5 +682,10 @@ main
     .bloc-accommodation
     {
         background: white;
+    }
+
+    .bloc-activities
+    {
+        padding-bottom: 200px;
     }
 }
