@@ -408,8 +408,7 @@ main
 
 .bloc-activities
 {
-    height: 550px;
-    margin-bottom: 20%;
+    margin-bottom: 100px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
@@ -420,6 +419,8 @@ main
     "activities-1 activities-2 activities-4 activities-6"
     "activities-1 activities-3 activities-4 activities-6"
     "activities-1 activities-3 activities-4 activities-6";
+    grid-template-rows: repeat(6, 1fr);
+    height: 500px;
 }
 
 
@@ -434,15 +435,7 @@ main
 
 .bloc-activities .activites-title
 {
-    position: absolute;
-    width: 100%;
-    background-color: white;
-    border-radius: 0 0 20px 20px;
-    padding: 20px 0;
-    margin: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
+    margin-left: 10px;
 }
 
 .card-activities:hover
@@ -473,6 +466,15 @@ main
     border-radius: 20px;
     object-fit: cover;
     margin: 0;
+}
+.activities-text
+{
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    margin: 0;
+    bottom: 0;
 }
 
 #activities-1
@@ -524,9 +526,25 @@ main
 
 .bloc-footer
 {
+    width: 33%;
     padding: 30px;
     display: flex;
     flex-direction: column;
+}
+
+.footer-title
+{
+    margin-bottom: 15px;
+}
+
+.footer-link
+{
+    margin-bottom: 10px;
+}
+
+.footer-link:hover
+{
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1200px)
@@ -584,13 +602,18 @@ main
 
     .bloc-activities
     {
+        margin-bottom: 450px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
         "activities-1 activities-2"
         "activities-4 activities-3"
         "activities-5 activities-6";
-        padding-bottom: 600px;
+    }
+
+    .card-activities img
+    {
+        height: 270px;
     }
 }
 
@@ -660,7 +683,6 @@ main
 
     .bloc-activities
     {
-        padding-bottom: 400px;
     }
 }
 
@@ -686,6 +708,7 @@ main
 
     .bloc-activities
     {
+        margin-bottom: 1350px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -695,7 +718,11 @@ main
         "activities-4"
         "activities-5"
         "activities-6";
-        height: 1500px;
-        padding-bottom: 1100px;
+    }
+
+    .blocs-footer
+    {
+        display: inline-flex;
+        flex-direction: column;
     }
 }
