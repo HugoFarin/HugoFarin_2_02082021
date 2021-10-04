@@ -33,7 +33,7 @@ header
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 25px;
+    padding: 20px;
 }
 
 #logo
@@ -228,11 +228,7 @@ main
     border-radius: 20px;
     padding: 0 20px;
     margin-left: 20px;
-    width: 32%;
-}
-
-.card-most-popular
-{
+    width: 33%;
 }
 
 .bloc-most-popular .h2-with-icon
@@ -248,11 +244,6 @@ main
     font-size: 25px;
 }
 
-.cases-most-popular
-{
-
-}
-
 .case-most-popular:hover
 {
     cursor: pointer;
@@ -260,37 +251,23 @@ main
 
 .case-most-popular
 {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: stretch;
     background: white;
     border: 5px solid transparent;
     border-radius: 20px;
-    box-shadow: 0px 0px 6px 0px black;
+    box-shadow: 0px 0px 6px 0px #00000099;;
     margin-bottom: 30px;
-}
-
-.case-most-popular #case-one
-{
-}
-
-.case-most-popular #case-two
-{
-}
-
-.case-most-popular #case-three
-{
-}
-
-.case-most-popular-img
-{
 }
 
 .case-most-popular-img img
 {
     width: 120px;
     height: 120px;
-    border-radius: 20px 0 0 20px;
+    border-radius: 15px 0 0 15px;
     object-fit: cover;
     display: flex;
     align-items: center;
@@ -326,7 +303,7 @@ main
     justify-content: space-between;
     padding: 0 20px;
     margin-right: 20px;
-    width: 63%;
+    width: 67%;
 }
 
 .bloc-accommodation h2
@@ -353,9 +330,10 @@ main
     background: white;
     display: flex;
     flex-direction: column;
+    height: 95%;
     border: 5px solid transparent;
     border-radius: 20px;
-    box-shadow: 0px 0px 6px 0px black;
+    box-shadow: 0px 0px 6px 0px #00000099;;
 }
 
 .case-accommodation:hover
@@ -367,7 +345,7 @@ main
 {
     width: 100%;
     height: 100px;
-    border-radius: 20px 20px 0 0;
+    border-radius: 15px 15px 0 0;
     background-size: 100% 100%;
     object-fit: cover;
 }
@@ -555,7 +533,7 @@ main
     }
 }
 
-@media screen and (max-width: 992px)
+@media screen and (max-width: 1000px)
 {
     main
     {
@@ -576,14 +554,10 @@ main
         width: 100%;
     }
 
-    .cases-most-popular
-    {
-    }
-
     .case-most-popular-img img
     {
         width: 250px;
-        height: 150px;
+        height: 180px;
     }
 
     .bloc-accommodation
@@ -617,8 +591,18 @@ main
     }
 }
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 750px)
 {
+    #logo
+    {
+        padding: 0 20px;
+    }
+
+    main
+    {
+        margin-top: 40px;
+    }
+
     .navbar
     {
         display: grid;
@@ -680,18 +664,25 @@ main
         right: -20px;
         border-radius: 15px;
     }
-
-    .bloc-activities
-    {
-    }
 }
 
-@media screen and (max-width: 576px)
+@media screen and (max-width: 600px)
 {
     .bar-research
     {
         width: 200px;
         height: 42px;
+    }
+
+    .bloc-most-popular
+    {
+        border-radius: 0;
+    }
+
+    .case-most-popular-img img
+    {
+        width: 150px;
+        height: 150px;
     }
 
     .cases-accommodation
