@@ -38,7 +38,7 @@ header
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
+    padding: 25px;
 }
 
 #logo
@@ -114,7 +114,7 @@ main
 
 .title1
 {
-    font-size: 32px;
+    font-size: 28px;
     margin: 10px 0;
 }
 
@@ -533,19 +533,22 @@ main
 
 @media screen and (max-width: 1200px)
 {
-    main
+    .case-most-popular-img img
     {
-        width: 95%;
+        width: 120px;
+        height: 165px;
+    }
+
+    .cases-accommodation
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
 }
 
 @media screen and (max-width: 1000px)
 {
-    main
-    {
-        width: 90%;
-    }
-
     .blocs
     {
         display: flex;
@@ -562,7 +565,7 @@ main
 
     .case-most-popular-img img
     {
-        width: 250px;
+        width: 300px;
         height: 180px;
     }
 
@@ -571,13 +574,6 @@ main
         margin-left: 0;
         margin-right: 0;
         width: 100%;
-    }
-
-    .cases-accommodation
-    {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
     }
 
     .bloc-activities
@@ -599,14 +595,19 @@ main
 
 @media screen and (max-width: 750px)
 {
+    header
+    {
+        padding: 0;
+    }
+
     #logo
     {
         padding: 0 20px;
     }
 
-    main
+    #navbar-sign-up
     {
-        margin-top: 40px;
+        align-items: flex-end;
     }
 
     .navbar
@@ -647,9 +648,21 @@ main
         border-bottom: solid 2px #0065fc;
     }
 
+    main
+    {
+        margin-top: 40px;
+        padding: 0;
+    }
+
+    .title1-and-subtitle
+    {
+        padding: 0 20px;
+    }
+
     .bloc-research
     {
         position: relative;
+        padding: 0 20px;
     }
 
     .bar-research
@@ -670,6 +683,37 @@ main
         right: -20px;
         border-radius: 15px;
     }
+
+    .filters
+    {
+        padding: 0 20px;
+    }
+
+    .info
+    {
+        padding: 0 20px;
+    }
+
+    .blocs
+    {
+        padding: 0 20px;
+    }
+
+    .case-most-popular-img img
+    {
+        width: 250px;
+        height: 180px;
+    }
+
+    .title-bloc-activities
+    {
+        padding: 0 20px;
+    }
+
+    .bloc-activities
+    {
+        padding: 0 20px;
+    }
 }
 
 @media screen and (max-width: 600px)
@@ -678,6 +722,11 @@ main
     {
         width: 200px;
         height: 42px;
+    }
+
+    .blocs
+    {
+        padding: 0;
     }
 
     .bloc-most-popular
