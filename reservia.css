@@ -208,6 +208,11 @@ main
     border-radius: 100px;
 }
 
+.info
+{
+    margin-top: 25px;
+}
+
 .info .fas
 {
     color: #0065fc;
@@ -549,6 +554,17 @@ main
 
 @media screen and (max-width: 1000px)
 {
+    .ul-filters
+    {
+        display: flex;
+    }
+
+    .ul-filters li
+    {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
     .blocs
     {
         display: flex;
@@ -618,6 +634,11 @@ main
         grid-template-areas: 
         "logo inscription"
         "hebergement activites";
+    }
+
+    .navbar .navbar-link 
+    {
+        padding: 20px;
     }
 
     #navbar-accommodation
