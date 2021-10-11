@@ -290,6 +290,8 @@ main
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .case-most-popular .case-text .name
@@ -367,6 +369,8 @@ main
     flex-direction: column;
     margin: 5px;
     margin-bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .case-accommodation .case-text .name
@@ -398,6 +402,7 @@ main
 
 .show-more
 {
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -600,7 +605,7 @@ main
 
     .bloc-activities
     {
-        margin-bottom: 450px;
+        margin-bottom: 360px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
@@ -611,7 +616,7 @@ main
 
     .card-activities img
     {
-        height: 270px;
+        height: 240px;
     }
 }
 
@@ -781,7 +786,7 @@ main
 
     .bloc-activities
     {
-        margin-bottom: 1350px;
+        margin-bottom: 950px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -791,6 +796,11 @@ main
         "activities-4"
         "activities-5"
         "activities-6";
+    }
+
+    .card-activities img
+    {
+        height: 200px;
     }
 
     .blocs-footer
