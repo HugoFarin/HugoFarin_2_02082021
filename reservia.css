@@ -381,7 +381,7 @@ main
 
 .case-accommodation .case-text .price
 {
-    margin: 0;
+    margin: 10px 0 0 0;
     color: black;
 }
 
@@ -596,6 +596,11 @@ main
         height: 180px;
     }
 
+    .case-most-popular .case-text .price
+    {
+        margin: 25px 0 0 0;
+    }
+
     .bloc-accommodation
     {
         margin-left: 0;
@@ -770,6 +775,11 @@ main
     {
         width: 150px;
         height: 150px;
+    }
+
+    .case-most-popular .case-text .price
+    {
+        margin: 15px 0 0 0;
     }
 
     .cases-accommodation
